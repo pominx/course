@@ -41,6 +41,10 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem "rspec-rails", "~> 3.7.2"
   gem "rails-controller-testing", "~> 1.0.2"
+  gem 'factory_bot_rails'
+  gem "shoulda-matchers", "~> 3.1.1"
+  gem 'ffaker'
+  gem 'pry-rails'
 end
 
 group :development do
