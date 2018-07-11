@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -45,6 +46,9 @@ group :development, :test do
   gem "shoulda-matchers", "~> 3.1.1"
   gem 'ffaker'
   gem 'pry-rails'
+  gem 'guard'
+  gem 'guard-rails', require: false
+  gem 'guard-rspec', '~> 4.7'
 end
 
 group :development do
