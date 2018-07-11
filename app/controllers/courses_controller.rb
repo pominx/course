@@ -36,6 +36,9 @@ class CoursesController < ApplicationController
     redirect_to courses_path
   end
 
+  def last_course
+    @course = Course.last
+  end
   private
     def course_params
       params.require(:course).permit(:title, :description)

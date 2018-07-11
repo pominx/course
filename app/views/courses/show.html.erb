@@ -1,7 +1,14 @@
 <div class="col-md-12">
   <div class="course">
-     <%= link_to("Edit", edit_course_path(@course) , :class => "btn btn-xs  pull-right") %>
+     <strong>Title:</strong>
      <h2><%= @course.title %></h2>
-     <p><%= @course.description %></p>
+
+     <strong>Description:</strong>
+     <p><%= render_description %></p>
+
    </div>
 </div>
+
+
+<%= link_to "Edit", edit_course_path(@course)  %>
+<%= link_to "Back" , courses_path %>
